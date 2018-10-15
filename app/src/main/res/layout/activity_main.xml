@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/follow_category_rv"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <com.spero.vision.follow.widght.VerticalViewPager
+            android:id="@+id/follow_fragment_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.spero.vision.follow.widght.VerticalViewPager>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
